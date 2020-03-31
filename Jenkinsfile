@@ -3,7 +3,7 @@ node {
     echo "Hello World"
   }
   stage('Test'){
-    bat "cd $workspace/my-app"
+    bat "cd $workspace\my-app"
     bat "mvn test"
     
   }
