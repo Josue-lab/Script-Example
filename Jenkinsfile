@@ -4,5 +4,6 @@ node {
   }
   stage('Test'){
   dir("./new-app")
+    bat "mvn test"
   }
 }
