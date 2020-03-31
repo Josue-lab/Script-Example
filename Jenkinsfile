@@ -3,6 +3,6 @@ node {
     echo "Hello World"
   }
   stage('Gradle Project'){
-    gradle init
+    bat "gradle init"
   }
 }
