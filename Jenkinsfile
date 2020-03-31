@@ -4,7 +4,11 @@ node {
   } 
   stage('Test'){
     dir("./my-app"){
-      bat "mvn test"
+      bat "mvn package"
     }
+  }
+  stage('Post-Build'){
+      dir("./my-app"){
+      archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
   }
 }
