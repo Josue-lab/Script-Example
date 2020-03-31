@@ -3,7 +3,7 @@ node {
     echo "Hello World"
   } 
   stage('Test'){
-    dir("./new-app"){
+    dir("./my-app"){
       bat "mvn test"
     }
   }
