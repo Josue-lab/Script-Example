@@ -10,5 +10,6 @@ node {
   stage('Post-Build'){
       dir("./my-app"){
       archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
+      }
   }
 }
