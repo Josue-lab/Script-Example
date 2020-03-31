@@ -3,7 +3,8 @@ node {
     echo "Hello World"
   }
   stage('Test'){
-    bat "cd $workspace/my-app"
-    bat "$workspace"
+    bat script:'''
+     cd "C:\Users\josue.valencia\.jenkins\workspace\Pipelines_123\ScripPipeline\my-app"
+     '''
   }
 }
