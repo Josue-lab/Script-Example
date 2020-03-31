@@ -4,5 +4,6 @@ node {
   }
   stage('Test'){
     bat "pwd"
+    cd "pwd"/my-app
   }
 }
