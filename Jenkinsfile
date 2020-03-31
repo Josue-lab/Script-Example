@@ -3,7 +3,7 @@ node {
     echo "Hello World"
   }
   stage('Test'){
-    bat "cd $pwd/my-app"
-    bat "pwd"
+    bat "cd $workspace/my-app"
+    bat "$workspace"
   }
 }
