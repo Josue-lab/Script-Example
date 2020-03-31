@@ -4,6 +4,7 @@ node {
   }
   stage('Test'){
     bat "cd $workspace/my-app"
+    bat "mvn test"
     
   }
 }
