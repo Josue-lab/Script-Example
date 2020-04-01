@@ -1,10 +1,22 @@
-node{
- environment {
-       env.PATH = env.PATH + ";c:\\Windows\\System32"
-   }
-  stage('Step 1'){
-    bat '''
-    bat "step1.bat"
-    '''
-  }
+#!/bin/bash
+{
+    agent any
+    options 
+    {
+        skipStagesAfterUnstable()
+    }
+   
+    stages 
+    {
+           stage('Step1')
+        {
+            steps
+            {
+            sh"""
+                  bat step1.bat
+            """
+            }
+        }           
+
+}
 }
