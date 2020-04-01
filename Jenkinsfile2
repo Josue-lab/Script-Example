@@ -26,6 +26,14 @@ pipeline {
                 bat 'start cmd.exe /c C:\\Users\\josue.valencia\\.jenkins\\workspace\\Pipelines_123\\ScripPipeline\\step2.bat'
             }
         }
+        
+           stage('Step3')
+        {   
+        git add . 
+        git commit -m "Commit"
+        git remote add origin https://github.com/Josue-lab/Script-Example.git
+
+}
 
 }
 }
