@@ -4,7 +4,7 @@ node {
   } 
   stage('Init '){
       bat "gradle init"
-      bat "gradlew zip"
+      bat "C:\Users\josue.valencia\.jenkins\workspace\Pipelines_123\ScripPipeline\gradlew.bat build"
   }
 
 }
