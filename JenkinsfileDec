@@ -1,16 +1,12 @@
 pipeline {
    agent any
-
    stages {
       stage('Hello') {
          steps {
             echo 'Hello World'
-         }
-       stage('Environment')
-         steps{
-          echo '$workspace'
-          echo '$JENKINS_URL'
-         }
+            echo '$workspace'
+            echo '$JENKINS_URL'
+            }
       }
    }
 }
