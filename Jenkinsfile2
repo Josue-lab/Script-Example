@@ -1,6 +1,6 @@
 node {
   stage('Hello World') {
-    echo "Hello World" >> File1.txt
+    echo "Hello World" 
   } 
   stage('Step1'){
       bat "step1.bat"
