@@ -1,1 +1,1 @@
-gradlew init
+bat "gradlew init"
