@@ -1,5 +1,7 @@
 node {  
   stage('SCM'){
+  git branch: 'master',
+  credentialsId: 'Josue-lab-sp191096#',
   git url: 'https://github.com/Josue-lab/Script-Example.git'
   }
   stage('Hello World') {
