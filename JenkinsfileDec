@@ -9,7 +9,7 @@ pipeline {
        stage('Environment')
          steps{
           echo '$workspace'
-          echo '$JENKINS_URL'JENKINS_URL'
+          echo '$JENKINS_URL'
          }
       }
    }
