@@ -1,7 +1,5 @@
 node{
   stage('Step 1'){
-   bat '''
-    bat step1.bat
-    '''
+    bat "step1.bat"
   }
 }
