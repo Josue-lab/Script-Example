@@ -5,4 +5,7 @@ node {
   stage('Step1'){
       bat "step1.bat"
   }
+    stage('Step2'){
+      bat "step2.bat"
+  }
 }
