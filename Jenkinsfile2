@@ -1,4 +1,7 @@
 node{
+ environment {
+       env.PATH = env.PATH + ";c:\\Windows\\System32"
+   }
   stage('Step 1'){
     bat '''
     bat "step1.bat"
