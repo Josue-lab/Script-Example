@@ -1,7 +1,6 @@
 FILE="C:\Users\josue.valencia\.jenkins\workspace\Pipelines_123\ScripPipeline\Step 1\"
-
 if [ -d "$FILE" ]; then 
-   echo "$File is a directory"
+   echo "$FILE is a directory"
 else 
    cd $FILE
    git add .
