@@ -1,4 +1,4 @@
-FILE="C:\Users\josue.valencia\.jenkins\workspace\Pipelines_123\ScripPipeline\Step 1\"
+FILE="C:\Users\josue.valencia\.jenkins\workspace\Pipelines_123\ScripPipeline\"
 if [ -d "$FILE" ]; then 
    echo "$FILE is a directory"
 else 
