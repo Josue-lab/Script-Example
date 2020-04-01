@@ -4,8 +4,9 @@ IF EXIST "C:\Users\josue.valencia\.jenkins\workspace\Pipelines_123\ScripPipeline
    git add .
    git commit -m "Commit"
    git push origin master
-   else (
+)
+   
+IF NOT EXIST "C:\Users\josue.valencia\.jenkins\workspace\Pipelines_123\ScripPipeline\Step 2" (
    echo "Directory was not created"
-   )  
 )
 
