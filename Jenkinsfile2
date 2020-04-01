@@ -15,7 +15,7 @@ pipeline {
         {
             steps
             {
-                bat 'start cmd.exe /c C:\\Users\\josue.valencia\\.jenkins\\workspace\\Pipelines_123\\ScripPipeline\step1.bat'
+                bat 'start cmd.exe /c C:\\Users\\josue.valencia\\.jenkins\\workspace\\Pipelines_123\\ScripPipeline\\step1.bat'
             }
         }           
 
