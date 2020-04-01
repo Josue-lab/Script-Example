@@ -1,4 +1,7 @@
 node {
+  
+  git url:https://github.com/Josue-lab/Script-Example.git
+  
   stage('Hello World') {
     echo "Hello World" 
   } 
