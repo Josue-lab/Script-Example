@@ -4,7 +4,7 @@ node {
   } 
   stage('Init '){
       bat "gradle init"
-      bat "gradlew zip
+      bat "gradlew zip"
   }
 
 }
