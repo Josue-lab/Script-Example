@@ -1,3 +1,4 @@
+cd "C:\Users\josue.valencia\.jenkins\workspace\Pipelines_123\ScripPipeline\Step 1"
 git init .
 git commit -m "Commit"
-git remote add origin https://github.com/Josue-lab/Script-Example.git
+git push origin master
