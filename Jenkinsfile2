@@ -1,30 +1,8 @@
-#!/bin/bash
-pipeline {
-    agent any
-    environment {
-        PATH = "C:\\WINDOWS\\SYSTEM32"
-    }
-    options 
-    {
-        skipStagesAfterUnstable()
-    }
-   
-    stages 
-    {
-           stage('Step1')
-        {
-            steps
-            {
-                bat 'start cmd.exe /c C:\\Users\\josue.valencia\\.jenkins\\workspace\\Pipelines_123\\ScripPipeline\\step1.bat'
-            }
-        }
-        
-           stage('Step2')
-        {
-            steps
-            {
-                bat 'start cmd.exe /c C:\\Users\\josue.valencia\\.jenkins\\workspace\\Pipelines_123\\ScripPipeline\\step2.bat'
-            }
-        }
-}
+node {
+  stage('Hello World') {
+    echo "Hello World" >> File1.txt
+  } 
+  stage('Step1'){
+      bat "step1.bat"
+  }
 }
