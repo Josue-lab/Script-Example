@@ -5,6 +5,7 @@ node {
 
   stage('Credentials'){
     environment{
+      echo "AWS Credentials"
       AWS_ACCESS_KEY_ID='AKIAIZSULLI5PURTR3TA'
       AWS_SECRET_ACCESS_KEY='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'
     }
