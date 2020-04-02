@@ -1,14 +1,14 @@
 node {  
+  stage('SCM'){
+  git url: 'https://github.com/Josue-lab/Script-Example.git'
+  }
+
   stage('Credentials'){
     environment{
       AWS_ACCESS_KEY_ID=AKIAIZSULLI5PURTR3TA
       AWS_SECRET_ACCESS_KEY=uSu80Qd7USWj70bLyyVVhc+S4vj6+VI+88lZLEvm
     }
   }
-  stage('SCM'){
-  git url: 'https://github.com/Josue-lab/Script-Example.git'
-  }
-  
   
   stage('Hello World') {
     echo "Hello World" 
