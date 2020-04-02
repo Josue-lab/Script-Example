@@ -11,4 +11,9 @@ node {
     stage('Step2'){
       bat "step2.bat"
   }
+    stage('Sanity check') {
+            steps {
+                input "Does the staging environment look ok?"
+            }
+        }
 }
