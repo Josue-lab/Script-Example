@@ -19,6 +19,7 @@ node {
   }
     stage('Step2'){
       bat "step2.bat"
+      sleep time: 10, unit: 'NANOSECONDS'
   }
     stage('Sanity check') {
           input "Does the staging environment look ok?"
