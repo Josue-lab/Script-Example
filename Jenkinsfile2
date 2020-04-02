@@ -13,5 +13,7 @@ node {
   }
     stage('Sanity check') {
           input "Does the staging environment look ok?"
+          bat 'deploy production'
   }
+   
 }
